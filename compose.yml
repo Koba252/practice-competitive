@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    volumes:
+      - ./:/go/src/
     environment:
       TZ: Asia/Tokyo
     command: >
