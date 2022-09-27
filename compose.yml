@@ -1,0 +1,13 @@
+services:
+  golang:
+    container_name: competitive-golang
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/go/src/
+    environment:
+      TZ: Asia/Tokyo
+    command: >
+      sh
+    tty: true
