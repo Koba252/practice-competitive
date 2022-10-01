@@ -1,1 +1,1 @@
-cat in.txt | go run cmd/tutorial.go > out.txt
+cat in.txt | go run cmd/main.go > out.txt
