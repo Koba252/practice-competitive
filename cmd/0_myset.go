@@ -53,3 +53,37 @@ func gcd(a, b int) int {
 
 	return gcd(b, a%b)
 }
+
+// nextPermutation 配列aを辞書順で次の配列に並び替える
+func nextPermutation(a []int) bool {
+	return permutationPandita(a, func(x, y int) bool { return x < y })
+}
+
+// prevPermutation 配列aを辞書順で前の配列に並び替える
+func prevPermutation(a []int) bool {
+	return permutationPandita(a, func(x, y int) bool { return x > y })
+}
+
+func permutationPandita(a []int, less func(x, y int) bool) bool {
+	i := len(a) - 2
+	for 0 <= i && !less(a[i], a[i+1]) {
+		i--
+	}
+
+	if i == -1 {
+		return false
+	}
+
+	j := i + 1
+	for k := j; k < len(a); k++ {
+		if less(a[i], a[k]) && !less(a[j], a[k]) {
+			j = k
+		}
+	}
+
+	a[i], a[j] = a[j], a[i]
+	for p, q := i + 1, len(a) - 1; p < q; p, q = p + 1, q - 1 {
+		a[p], a[q] = a[q], a[p]
+	}
+	return true
+}
