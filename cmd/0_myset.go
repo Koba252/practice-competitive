@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func main_sample() {
 	// 標準入力1
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)
@@ -31,10 +31,12 @@ func main() {
 	// 文字列→数値
 	var str string = "10"
 	strInt, _ := strconv.Atoi(str)
+	fmt.Print(strInt)
 
 	// 数値→文字列
 	var num int = 20
 	numStr := strconv.Itoa(num)
+	fmt.Print(numStr)
 }
 
 // 絶対値

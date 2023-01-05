@@ -6,10 +6,6 @@ import (
 	"strings"
 )
 
-func main() {
-	abc052B()
-}
-
 func abc052B() {
 	var n int
 	var s string

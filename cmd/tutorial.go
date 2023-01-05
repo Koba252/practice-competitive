@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-func main() {
-	space2NewLine()
-}
-
 // 任意のn回分だけ入力データをそのまま出力する
 func multiStdin() {
 	r := bufio.NewReader(os.Stdin)

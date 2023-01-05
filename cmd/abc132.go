@@ -6,10 +6,6 @@ import (
 	"sort"
 )
 
-func main() {
-	abc132C()
-}
-
 func abc132C() {
 	var n int
 	fmt.Scan(&n)

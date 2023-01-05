@@ -6,10 +6,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	abc086B()
-}
-
 func abc086B() {
 	var a, b string
 	fmt.Scanf("%s %s", &a, &b)

@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-func main() {
-	abc142C()
-}
-
 func abc142C() {
 	var n int
 	fmt.Scan(&n)

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func main() {
+func cf2016B() {
 	var n, a, b int
 	fmt.Scanf("%d %d %d", &n, &a, &b)
 

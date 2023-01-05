@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	abc060B()
-}
-
 func abc060B() {
 	var a, b, c int
 	fmt.Scanf("%d %d %d", &a, &b, &c)

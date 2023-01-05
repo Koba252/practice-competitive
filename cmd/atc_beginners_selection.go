@@ -10,10 +10,6 @@ import (
 	// "strings"
 )
 
-func main() {
-	abc086C()
-}
-
 // abc086C ABC086Cの回答
 func abc086C() {
 	var n int

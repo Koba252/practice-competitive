@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	abc046B()
-}
-
 func abc046B() {
 	// 標準入力1
 	var n, k int

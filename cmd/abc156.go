@@ -10,10 +10,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	abc156C()
-}
-
 // ABC156のC回答
 func abc156C() {
 	var n int

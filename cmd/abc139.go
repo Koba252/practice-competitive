@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	abc139B()
-}
-
 // abc139B ABC139のB回答
 func abc139B() {
 	var a, b int

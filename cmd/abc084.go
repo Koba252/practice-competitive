@@ -6,10 +6,6 @@ import (
 	"strings"
 )
 
-func main() {
-	abc084B()
-}
-
 func abc084B() {
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)

@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	pana2020B()
-}
-
 func pana2020B() {
 	var h, w int
 	fmt.Scanf("%d %d", &h, &w)

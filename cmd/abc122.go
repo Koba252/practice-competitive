@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-func main() {
-	abc122B()
-}
-
 func abc122B() {
 	r := bufio.NewReader(os.Stdin)
 	in, _ := r.ReadString('\n')

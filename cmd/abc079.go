@@ -9,10 +9,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	abc079C()
-}
-
 func abc079C() {
 	r := bufio.NewReader(os.Stdin)
 	in, _ := r.ReadString('\n')

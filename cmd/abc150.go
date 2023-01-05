@@ -9,10 +9,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	abc150C()
-}
-
 func abc150C() {
 	var n int
 	fmt.Scanf("%d", &n)
@@ -52,7 +48,7 @@ func abc150C() {
 			break
 		}
 
-		nextPermutation(base)
+		nextPermutation_abc150C(base)
 		i++
 	}
 
@@ -65,15 +61,15 @@ func abc150C() {
 	fmt.Println(ans)
 }
 
-func nextPermutation(a []int) bool {
-	return permutationPandita(a, func(x, y int) bool { return x < y })
+func nextPermutation_abc150C(a []int) bool {
+	return permutationPandita_abc150C(a, func(x, y int) bool { return x < y })
 }
 
-func prevPermutation(a []int) bool {
-	return permutationPandita(a, func(x, y int) bool { return x > y })
+func prevPermutation_abc150C(a []int) bool {
+	return permutationPandita_abc150C(a, func(x, y int) bool { return x > y })
 }
 
-func permutationPandita(a []int, less func(x, y int) bool) bool {
+func permutationPandita_abc150C(a []int, less func(x, y int) bool) bool {
 	i := len(a) - 2
 	for 0 <= i && !less(a[i], a[i+1]) {
 		i--

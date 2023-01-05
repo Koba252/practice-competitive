@@ -7,10 +7,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	abc114B()
-}
-
 func abc114B() {
 	var s string
 	fmt.Scanf("%s", &s)
@@ -22,7 +18,7 @@ func abc114B() {
 		as := sl[i] + sl[i + 1] + sl[i + 2]
 		a, _ := strconv.Atoi(as)
 
-		diff := abs(a - 753)
+		diff := abs114B(a - 753)
 		if diff < ans {
 			ans = diff
 		}
@@ -31,7 +27,7 @@ func abc114B() {
 	fmt.Println(ans)
 }
 
-func abs(n int) int {
+func abs114B(n int) int {
 	if n < 0 {
 		n *= -1
 	}

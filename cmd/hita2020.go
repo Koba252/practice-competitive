@@ -10,10 +10,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	hita2020B()
-}
-
 func hita2020B() {
 	var a, b, m int
 	fmt.Scanf("%d %d %d", &a, &b, &m)

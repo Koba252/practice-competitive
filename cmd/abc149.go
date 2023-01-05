@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	abc149C()
-}
-
 func abc149C() {
 	var x int
 	fmt.Scanf("%d", &x)
