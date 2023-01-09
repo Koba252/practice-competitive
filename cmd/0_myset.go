@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-func main_sample() {
+func main() {
 	// 標準入力1
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)
