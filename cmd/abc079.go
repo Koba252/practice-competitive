@@ -9,6 +9,27 @@ import (
 	"strconv"
 )
 
+func abc079B() {
+	var n int
+	fmt.Scanf("%d", &n)
+
+	arr := make([]int, n + 1)
+	arr[0] = 2
+	arr[1] = 1
+
+	if n == 1 {
+		fmt.Println(arr[1])
+		return
+	}
+
+	for i := 2; i <= n; i++ {
+		tmp := arr[i-1] + arr[i-2]
+		arr[i] = tmp
+	}
+
+	fmt.Println(arr[n])
+}
+
 func abc079C() {
 	r := bufio.NewReader(os.Stdin)
 	in, _ := r.ReadString('\n')
