@@ -18,3 +18,36 @@ func abc139B() {
 	}
 	fmt.Println(n + 1)
 }
+
+// abc139C ABC139のC回答
+func abc139C() {
+	r := bufio.NewReader(os.Stdin)
+	in, _ := r.ReadString('\n')
+	n, _ := strconv.Atoi(strings.Fields(in)[0])
+
+	in, _ = r.ReadString('\n')
+	arrStr := strings.Fields(in)
+
+	arr := make([]int, n)
+	for i, a := range arrStr {
+		arr[i], _ = strconv.Atoi(a)
+	}
+
+	var ans, tmp int
+	for i := 0; i < n - 1; i++ {
+		if arr[i] >= arr[i + 1] {
+			tmp++
+		} else {
+			if tmp > ans {
+				ans = tmp
+			}
+			tmp = 0
+		}
+	}
+
+	if tmp > ans {
+		ans = tmp
+	}
+
+	fmt.Println(ans)
+}
