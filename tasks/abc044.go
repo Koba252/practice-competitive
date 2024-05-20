@@ -1,11 +1,11 @@
 // 問題: https://atcoder.jp/contests/abc044/tasks
-package main
+package tasks
 
 import (
 	"fmt"
 )
 
-func abc044B() {
+func ABC044B() {
 	var w string
 	fmt.Scanf("%s", &w)
 

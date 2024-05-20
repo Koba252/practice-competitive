@@ -3,10 +3,13 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/c6tower/practice-competitive/tasks"
 )
 
-var tasks = map[string]func(){
-	"abc044B": abc044B,
+var taskMap = map[string]func(){
+	"ABC044B": tasks.ABC044B,
+	"ABC046B": tasks.ABC046B,
 }
 
 func main() {
@@ -16,7 +19,7 @@ func main() {
 	}
 
 	task := os.Args[1]
-	if f, ok := tasks[task]; ok {
+	if f, ok := taskMap[task]; ok {
 		f()
 	} else {
 		fmt.Printf("Task not found: %s\n", task)
