@@ -19,7 +19,7 @@ func abc044B() {
 	}
 
 	for _, v := range m {
-		if v % 2 == 1 {
+		if v%2 == 1 {
 			fmt.Println("No")
 			return
 		}
