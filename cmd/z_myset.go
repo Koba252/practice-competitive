@@ -5,11 +5,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
+	"strings"
 )
 
-func main() {
+func mySet() {
 	// 標準入力1
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)
@@ -84,7 +84,7 @@ func permutationPandita(a []int, less func(x, y int) bool) bool {
 	}
 
 	a[i], a[j] = a[j], a[i]
-	for p, q := i + 1, len(a) - 1; p < q; p, q = p + 1, q - 1 {
+	for p, q := i+1, len(a)-1; p < q; p, q = p+1, q-1 {
 		a[p], a[q] = a[q], a[p]
 	}
 	return true
