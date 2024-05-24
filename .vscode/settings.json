@@ -1,0 +1,6 @@
+{
+    // github copilot
+    "github.copilot.enable": {
+        "go": false,
+    },
+}
