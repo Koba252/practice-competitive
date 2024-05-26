@@ -26,9 +26,11 @@ func ABC158C() {
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)
 
-	for ans := 1; ans <= 1000; ans++ {
-		if 100*(ans+a) <= 108*ans && 100*(ans+a+1) > 108*ans && 100*(ans+b) <= 110*ans && 100*(ans+b+1) > 110*ans {
-			fmt.Println(ans)
+	for i := 1; i <= 10000; i++ {
+		var aa int = i * 8 / 100
+		var bb int = i * 10 / 100
+		if aa == a && bb == b {
+			fmt.Println(i)
 			return
 		}
 	}
