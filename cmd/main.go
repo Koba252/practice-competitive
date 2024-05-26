@@ -11,6 +11,8 @@ var taskMap = map[string]func(){
 	"ABC044B": tasks.ABC044B,
 	"ABC046B": tasks.ABC046B,
 	"ABC093B": tasks.ABC093B,
+	"ABC158B": tasks.ABC158B,
+	"ABC158C": tasks.ABC158C,
 }
 
 func main() {
